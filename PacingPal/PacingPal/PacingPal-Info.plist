@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>用于同步您的步数、活动能量、睡眠和心率数据，让AI周报分析更精准。您的数据仅在本地设备分析，不会上传共享。</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>PacingPal 仅读取健康数据，不会写入或修改您的健康信息。</string>
+</dict>
+</plist>

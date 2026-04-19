@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | PacingPal</title>
+    <meta name="description" content="PacingPal Privacy Policy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #5B8FB9;
+            --secondary: #86B892;
+            --dark: #1a1a1a;
+            --gray: #6b7280;
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--dark);
+            line-height: 1.7;
+            background: var(--light-gray);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 24px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            background: white;
+            margin: 40px auto;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .last-updated {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #374151;
+        }
+
+        ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #374151;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            main {
+                margin: 20px auto;
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">P</div>
+                    <span>PacingPal</span>
+                </a>
+                <span>Privacy Policy</span>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <h1>PacingPal Privacy Policy</h1>
+            <div class="last-updated">Last updated: April 19, 2026</div>
+
+            <h2>Overview</h2>
+            <p>
+                PacingPal ("we", "us", or "our") operates the PacingPal iOS mobile application (the "App") for energy management for people living with Long COVID and ME/CFS.
+            </p>
+            <p>
+                This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our App.
+            </p>
+
+            <h2>Data Collection and Use</h2>
+            <p>
+                We do <strong>not</strong> collect, store, or share any of your personal health data on our servers.
+            </p>
+
+            <h3>Data Stored Locally</h3>
+            <p>All your personal data including:</p>
+            <ul>
+                <li>Energy entries and activity logs</li>
+                <li>Symptom logs</li>
+                <li>Daily energy budget settings</li>
+                <li>Generated AI insights</li>
+            </ul>
+            <p>is stored <strong>only on your personal iOS device</strong> using Apple's SwiftData. We do not have access to this data.</p>
+
+            <h3>AI Analysis Data</h3>
+            <p>
+                When you choose to generate an AI weekly insight, your anonymized weekly summary data (activity counts, symptom patterns, no personal identifiers) is sent to the AI provider you have configured in the app settings (DeepSeek, Anthropic, OpenAI, Kimi, or Tongyi Qwen) to generate the insight. This data is processed according to the AI provider's privacy policy. We do not store this data after the insight is generated.
+            </p>
+
+            <h3>HealthKit Integration</h3>
+            <p>
+                If you grant permission, PacingPal reads health data from Apple HealthKit (step count, active energy burned, sleep duration, resting heart rate) to provide better AI analysis. This data is also only stored locally on your device and never uploaded to our servers unless you explicitly generate an AI insight.
+            </p>
+
+            <h2>Third-Party Services</h2>
+            <p>The app uses the following third-party services:</p>
+            <ul>
+                <li><strong>Apple App Store / StoreKit 2</strong> - Subscription management handled by Apple</li>
+                <li><strong>AI Providers</strong> (DeepSeek, Anthropic, OpenAI, Kimi, Tongyi Qwen) - AI insight generation, each has their own privacy policy</li>
+            </ul>
+
+            <h2>Children's Privacy</h2>
+            <p>
+                Our app does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from children under 18.
+            </p>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>
+                We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.
+            </p>
+
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions or suggestions about this privacy policy, please contact us at: [your-email@example.com]
+            </p>
+
+            <hr style="margin: 40px 0; border: none; border-top: 1px solid #e5e7eb;">
+
+            <p style="color: var(--gray); font-size: 14px; font-style: italic;">
+                This privacy policy is for informational purposes only. You should consult with a lawyer to ensure it meets your specific legal requirements.
+            </p>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PacingPal. All rights reserved.</p>
+            <p><a href="index.html">← Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>

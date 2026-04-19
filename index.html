@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacingPal | 缓行 - Energy Management for Long COVID & ME/CFS</title>
+    <meta name="description" content="PacingPal helps Long COVID and ME/CFS patients manage energy using the spoon theory with AI-powered insights. 缓行 - 为长新冠/慢性疲劳综合症患者设计的能量管理应用。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #5B8FB9;
+            --secondary: #86B892;
+            --dark: #1a1a1a;
+            --gray: #6b7280;
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #f8fbff 0%, #e8f4f8 100%);
+            padding: 80px 0 100px;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 4px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .lang-btn {
+            padding: 6px 14px;
+            border-radius: 16px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .en h1 .zh {
+            display: none;
+        }
+
+        .zh h1 .en {
+            display: none;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: var(--gray);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            box-shadow: var(--shadow);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--dark);
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            border: 1px solid #e5e7eb;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .phone-mockup {
+            width: 280px;
+            margin: 0 auto;
+            border-radius: 40px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            border: 8px solid #1a1a1a;
+            background: white;
+        }
+
+        .phone-mockup img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Features Section */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            letter-spacing: -0.02em;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+            border: 1px solid #f0f0f0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            background: var(--light-gray);
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+        }
+
+        .screenshot-item {
+            background: white;
+            border-radius: 24px;
+            padding: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .screenshot-item:hover {
+            transform: scale(1.02);
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* Problem Section */
+        .problem {
+            background: white;
+        }
+
+        .problem-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .problem-content h2 {
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+
+        .problem-content p {
+            font-size: 18px;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .problem-list {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .problem-list li {
+            font-size: 18px;
+            padding: 12px 0;
+            color: var(--gray);
+        }
+
+        .problem-list li::marker {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+
+        /* Language switching */
+        .en .zh-text {
+            display: none;
+        }
+
+        .zh .en-text {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .phone-mockup {
+                width: 240px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 640px) {
+            header {
+                padding: 40px 0 60px;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="en">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-icon">P</div>
+                    <span>PacingPal</span>
+                </div>
+                <div class="lang-switch">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>
+                        <span class="en-text">Manage your energy,<br>reclaim your life</span>
+                        <span class="zh-text">管理你的能量<br>找回你的生活</span>
+                    </h1>
+                    <p class="en-text">
+                        PacingPal is an energy management app for Long COVID and ME/CFS patients.
+                        Track your daily energy budget with the spoon theory, get AI-powered insights,
+                        and understand your body's patterns.
+                    </p>
+                    <p class="zh-text">
+                        缓行（PacingPal）是为长新冠和慢性疲劳综合症（ME/CFS）患者设计的能量管理应用。
+                        使用勺子理论追踪每日能量预算，获得 AI 驱动的洞察，了解你身体的模式。
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://apps.apple.com" target="_blank" class="btn-primary">
+                            <span class="en-text">Download on App Store</span>
+                            <span class="zh-text">在 App Store 下载</span>
+                        </a>
+                        <a href="https://github.com/quanwx/PacingPal" target="_blank" class="btn-secondary">
+                            <span class="en-text">View on GitHub</span>
+                            <span class="zh-text">查看 GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <img src="PacingPal/screenshots/1_Today.png" alt="PacingPal Today Screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="problem">
+        <div class="container">
+            <div class="problem-content">
+                <h2>
+                    <span class="en-text">The Problem We Solve</span>
+                    <span class="zh-text">我们解决的问题</span>
+                </h2>
+                <p class="en-text">
+                    Existing energy tracking apps on the App Store are outdated, generic, and lack modern features that patients really need.
+                </p>
+                <p class="zh-text">
+                    App Store 上现有的能量追踪应用要么过时，要么过于通用，缺少患者真正需要的现代化功能。
+                </p>
+                <ul class="problem-list">
+                    <li class="en-text">❌ Outdated interfaces no longer maintained</li>
+                    <li class="zh-text">❌ 界面过时，无人维护</li>
+                    <li class="en-text">❌ Generic health trackers don't understand pacing</li>
+                    <li class="zh-text">❌ 通用健康追踪器不理解 pacing 的概念</li>
+                    <li class="en-text">❌ No AI analytics or personalized insights</li>
+                    <li class="zh-text">❌ 没有 AI 分析和个性化洞察</li>
+                    <li class="en-text">✅ PacingPal fixes all this with modern design & AI</li>
+                    <li class="zh-text">✅ PacingPal 用现代设计和 AI 解决了所有这些问题</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en-text">Core Features</span>
+                <span class="zh-text">核心功能</span>
+            </h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🪣</div>
+                    <h3>
+                        <span class="en-text">Energy Bucket</span>
+                        <span class="zh-text">能量桶</span>
+                    </h3>
+                    <p class="en-text">
+                        Visualize your daily energy budget based on the spoon theory. Track what activities consume your energy in real-time.
+                    </p>
+                    <p class="zh-text">
+                        基于勺子理论可视化你的每日能量预算。实时追踪哪些活动消耗了你的能量。
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>
+                        <span class="en-text">AI-Powered Insights</span>
+                        <span class="zh-text">AI 驱动洞察</span>
+                    </h3>
+                    <p class="en-text">
+                        Get weekly AI analysis of your energy patterns. Discover what activities trigger your symptoms.
+                    </p>
+                    <p class="zh-text">
+                        每周获得 AI 对你能量模式的分析。发现哪些活动触发了你的症状。
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>
+                        <span class="en-text">Natural Language Input</span>
+                        <span class="zh-text">自然语言输入</span>
+                    </h3>
+                    <p class="en-text">
+                        Just type what you did in plain language. AI automatically extracts activities and energy cost.
+                    </p>
+                    <p class="zh-text">
+                        只需用自然语言输入你做了什么。AI 自动提取活动和能量消耗。
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>
+                        <span class="en-text">Calendar History</span>
+                        <span class="zh-text">日历历史</span>
+                    </h3>
+                    <p class="en-text">
+                        Browse your past entries by date. Look back and understand how your energy changes over time.
+                    </p>
+                    <p class="zh-text">
+                        按日期浏览历史记录。回顾并了解你的能量如何随时间变化。
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>
+                        <span class="en-text">Symptom Tracking</span>
+                        <span class="zh-text">症状追踪</span>
+                    </h3>
+                    <p class="en-text">
+                        Track fatigue, pain, sleep quality and other symptoms on a 0-10 scale. Correlate with energy usage.
+                    </p>
+                    <p class="zh-text">
+                        用 0-10 分追踪疲劳、疼痛、睡眠质量等症状。与能量消耗进行关联分析。
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>
+                        <span class="en-text">Privacy First</span>
+                        <span class="zh-text">隐私优先</span>
+                    </h3>
+                    <p class="en-text">
+                        All your personal health data stays on your device. Only AI analysis is sent securely to the cloud.
+                    </p>
+                    <p class="zh-text">
+                        所有你的个人健康数据都保存在你的设备上。只有 AI 分析会加密发送到云端。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en-text">Screenshots</span>
+                <span class="zh-text">应用截图</span>
+            </h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="PacingPal/screenshots/1_Today.png" alt="Today Screen">
+                </div>
+                <div class="screenshot-item">
+                    <img src="PacingPal/screenshots/2_AddEntry.png" alt="Add Entry">
+                </div>
+                <div class="screenshot-item">
+                    <img src="PacingPal/screenshots/3_History.png" alt="History">
+                </div>
+                <div class="screenshot-item">
+                    <img src="PacingPal/screenshots/4_Insights.png" alt="AI Insights">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="problem-content">
+                <h2>
+                    <span class="en-text">Pricing</span>
+                    <span class="zh-text">定价</span>
+                </h2>
+                <p class="en-text">
+                    Free download with 7-day free trial. After that, subscribe to unlock all features.
+                </p>
+                <p class="zh-text">
+                    免费下载，提供 7 天免费试用。试用后订阅解锁所有功能。
+                </p>
+                <div class="features" style="max-width: 600px; margin: 40px auto 0;">
+                    <div class="feature-card">
+                        <h3 style="text-align: center;">
+                            <span class="en-text">Monthly</span>
+                            <span class="zh-text">月付</span>
+                        </h3>
+                        <div style="text-align: center; font-size: 36px; font-weight: 700; color: var(--primary);">$4.99</div>
+                        <p style="text-align: center; margin-top: 8px;"><span class="en-text">per month</span><span class="zh-text">/月</span></p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="text-align: center;">
+                            <span class="en-text">Yearly</span>
+                            <span class="zh-text">年付</span>
+                        </h3>
+                        <div style="text-align: center; font-size: 36px; font-weight: 700; color: var(--primary);">$49.99</div>
+                        <p style="text-align: center; margin-top: 8px;"><span class="en-text">per year (17% discount)</span><span class="zh-text">/年（享 17% 折扣）</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">P</div>
+                    <span>PacingPal</span>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html"><span class="en-text">Privacy Policy</span><span class="zh-text">隐私政策</span></a>
+                    <a href="https://github.com/quanwx/PacingPal"><span class="en-text">GitHub</span><span class="zh-text">代码仓库</span></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PacingPal. All rights reserved.</p>
+                <p class="en-text">Built with ❤️ for the Long COVID and ME/CFS community</p>
+                <p class="zh-text">为长新冠和 ME/CFS 社群用心打造</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.body.className = lang;
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            localStorage.setItem('language', lang);
+        }
+
+        // Load saved language
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('language');
+            const browserLang = navigator.language || navigator.userLanguage;
+            const defaultLang = savedLang || (browserLang.startsWith('zh') ? 'zh' : 'en');
+            setLanguage(defaultLang);
+            document.querySelector(`.lang-btn[data-lang="${defaultLang}"]`);
+        });
+    </script>
+</body>
+</html>

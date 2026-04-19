@@ -1,0 +1,14 @@
+// PacingPal
+// APIKey.swift
+// 如果需要使用云端 Claude API，取消下面注释并填入你的 Anthropic API Key
+// 这个文件被 .gitignore 忽略，不会提交到 git
+
+import Foundation
+
+// 默认使用本地 Core ML 模型，如果需要切换到云端 API，取消注释下面这行：
+// typealias AIService = ClaudeAIService
+//
+// @MainActor
+// extension ClaudeAIService {
+//     static let shared = ClaudeAIService(apiKey: "YOUR_ANTHROPIC_API_KEY_HERE")
+// }

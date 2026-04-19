@@ -1,0 +1,27 @@
+# Xcode
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.xcuserdatad
+UserInterfaceState.xcuserstate
+.DS_Store
+
+# Build
+build/
+DerivedData/
+*.build/
+
+# API Keys - DO NOT commit
+PacingPal/Services/APIKey.swift
+
+# Core ML model (if large, you may want to ignore if too big)
+# *.mlpackage
+
+# macOS
+.AppleDouble
+Icon
+
+# Backup
+*~
+*.bak
+*.backup
