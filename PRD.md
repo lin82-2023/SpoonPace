@@ -17,37 +17,29 @@
 **中文口号：** 管理能量，慢慢生活
 
 **Target Market:**
-- Primary: 欧美地区长新冠/ME-CFS 患者
-- Secondary: 香港/东南亚华语患者
-- TAM: 数千万患者
-- SAM: 数百万智能手机用户
-- SOM (目标): 2,000 订阅用户 → $10,000/月 收入 (6-12个月目标)
+- Primary: North America & Europe - Long COVID and ME/CFS patients
+- Secondary: Hong Kong & Chinese-speaking Southeast Asia
 
 ---
 
 ## 问题定义
 
 ### 用户痛点
-1. **现有追踪工具不理解 Pacing** - 通用健康 app 没有能量管理概念
-2. **现有专门 app UI 过时** - 大多数已停止更新，用户体验差
-3. **缺乏智能分析** - 只有记录功能，不给洞察和建议
-4. **患者需要主动管理能量** - 避免"发作后崩溃"（crash after overexertion）
+1. **Existing tracking tools don't understand pacing** - Generic health apps don't have the energy management concept
+2. **Outdated UI** - Most specialized apps are no longer updated, poor user experience
+3. **No intelligent analytics** - Only logging, no insights or recommendations
+4. **Patients need active energy management** - To avoid crash after overexertion
 
 ### 核心问题
-> 长新冠和 ME-CFS 患者需要通过**能量 pacing** 来管理症状，但没有一款现代化的、带有智能分析的专用 app。
+> Long COVID and ME/CFS patients need energy pacing to manage symptoms, but there isn't a modern, AI-enabled app specifically for this purpose.
 
 ---
 
 ## 目标
 
-### 商业目标
-- 6个月：500 订阅用户 → ~$2,500/月
-- 12个月：2,000 订阅用户 → **$10,000/月** ✓
-
 ### 产品目标
-- 成为长新冠/ME-CFS 社区最推荐的专用能量管理 app
-- NPS > 40（用户推荐度）
-- 月留存率 > 60%（这种健康应用留存率很高）
+- Become the most recommended dedicated energy management app in the Long COVID/ME-CFS community
+- Help patients better understand and manage their energy patterns
 
 ---
 
@@ -102,11 +94,11 @@
 - [ ] AI 每周总结 - 根据一周数据，分析能量模式
 - [ ] 自然语言输入 - 用户输入文字描述，AI 自动提取活动和症状
 
-### 6. 订阅付费
-- [ ] 7天免费试用
-- [ ] $4.99/month / $49.99/year 订阅
+### 6. Subscription
+- [ ] 7-day free trial
+- [ ] Subscription model to unlock full features
 
-**✓ MVP 完成后，产品已经可以解决核心问题**
+**✓ After MVP completion, the product can already solve the core problem**
 
 ---
 
@@ -269,61 +261,6 @@ AI 分析一周数据，输出：
 - 不收集用户健康数据给广告商
 - 透明隐私政策
 - 可选端侧处理（如果后来做大了，可以集成 on-device AI）
-
----
-
-##  monetization 策略
-
-### 定价
-```
-- 免费下载：全部功能 7 天免费试用
-- 月度订阅：$4.99 / 月
-- 年度订阅：$49.99 / 年  (省 $9.89，相当于 8.3 折)
-```
-
-### 收入预测
-| 用户数 | 月度收入 |
-|--------|----------|
-| 500 | $2,495 |
-| 1,000 | $4,990 |
-| 2,000 | $9,980 | ✓ **目标达成**
-| 5,000 | $24,950 |
-
-### 成本预估 (每月)
-- AI API 成本：$0.01 / 用户/月 → 2,000 用户 = $20/month
-- 服务器/后端：如果只用 Apple 服务，几乎 $0
-- Apple 抽成 30%（第一年之后 15%）
-- **净利润**：2,000 用户 → ~$7,000/month 纯利润
-
----
-
-## 获客策略
-
-### 核心：患者社区口碑传播 (免费)
-1. Reddit: r/longcovid, r/MECFS 真诚分享（不要直接广告，先参与讨论）
-2. Facebook 群组：很多长新冠支持群组
-3. Discord 社区：患者聚集
-4. 找支持者：让医生、健康博主推荐
-
-### 低成本广告
-- Facebook/Instagram 定向广告：精准定位对"长新冠"、"ME-CFS"感兴趣的用户
-- 每次获客成本控制在 $10 以内，完全可承受
-
----
-
-## 成功指标
-
-### MVP 阶段
-- 下载量：前 3个月 > 1,000
-- 转化率：试用转订阅 > 10% (健康应用一般更高)
-- 月留存：> 60%
-
-### 增长阶段
-- 12个月订阅用户 > 2,000
-- 月收入 > $10,000
-- NPS > 40
-
----
 
 ## App Store ASO 优化建议
 

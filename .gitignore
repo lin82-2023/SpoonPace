@@ -25,3 +25,6 @@ Icon
 *~
 *.bak
 *.backup
+
+# Project documentation (local only)
+CLAUDE.md

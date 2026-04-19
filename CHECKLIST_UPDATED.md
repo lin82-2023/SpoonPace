@@ -139,11 +139,3 @@
 - [ ] Add link in bio to App Store
 - [ ] Collect feedback for next iteration
 
----
-
-# Revenue Milestones Tracker
-
-- [ ] $1,000/month 🥉
-- [ ] $2,500/month 🥈
-- [ ] $5,000/month 🎖
-- [ ] **$10,000/month 🏆** - GOAL ACHIEVED!
