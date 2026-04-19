@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // SVGLogoView.swift
 // Logo 组件 - 使用 SwiftUI 原生绘制
 

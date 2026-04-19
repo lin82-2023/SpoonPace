@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // LegalDocumentView.swift
 // 法律文档页面 - Privacy Policy / Terms of Service
 

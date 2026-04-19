@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // UserSettings.swift
 // 用户设置
 

@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // SymptomEntry.swift
 // 症状记录
 

@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // ActivityType.swift
 // 预定义活动类型，用户可以自定义
 

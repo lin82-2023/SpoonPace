@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // SettingsView.swift
 // 设置页面
 

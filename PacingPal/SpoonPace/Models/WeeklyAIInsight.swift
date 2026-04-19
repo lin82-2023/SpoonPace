@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // WeeklyAIInsight.swift
 // AI 每周分析结果
 

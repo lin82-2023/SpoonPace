@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // SubscriptionManager.swift
 // StoreKit 2 订阅管理
 

@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // HealthKitManager.swift
 // HealthKit health data sync - reads step count, active energy, sleep, resting heart rate
 // Read-only access, no writing. Enabled only after explicit user authorization

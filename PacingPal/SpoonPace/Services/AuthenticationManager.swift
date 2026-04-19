@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // AuthenticationManager.swift
 // Sign in with Apple 管理
 

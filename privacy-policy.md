@@ -1,10 +1,10 @@
-# PacingPal Privacy Policy
+# SpoonPace Privacy Policy
 
 **Last updated: April 19, 2026**
 
 ## Overview
 
-PacingPal ("we", "us", or "our") operates the PacingPal iOS mobile application (the "App") for energy management for people living with Long COVID and ME/CFS.
+SpoonPace ("we", "us", or "our") operates the SpoonPace iOS mobile application (the "App") for energy management for people living with Long COVID and ME/CFS.
 
 This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our App.
 
@@ -28,7 +28,7 @@ When you choose to generate an AI weekly insight, your anonymized weekly summary
 
 ### HealthKit Integration
 
-If you grant permission, PacingPal reads health data from Apple HealthKit (step count, active energy burned, sleep duration, resting heart rate) to provide better AI analysis. This data is also only stored locally on your device and never uploaded to our servers unless you explicitly generate an AI insight.
+If you grant permission, SpoonPace reads health data from Apple HealthKit (step count, active energy burned, sleep duration, resting heart rate) to provide better AI analysis. This data is also only stored locally on your device and never uploaded to our servers unless you explicitly generate an AI insight.
 
 ## Third-Party Services
 

@@ -5,6 +5,6 @@
 	<key>NSHealthShareUsageDescription</key>
 	<string>用于同步您的步数、活动能量、睡眠和心率数据，让AI周报分析更精准。您的数据仅在本地设备分析，不会上传共享。</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>PacingPal 仅读取健康数据，不会写入或修改您的健康信息。</string>
+	<string>SpoonPace 仅读取健康数据，不会写入或修改您的健康信息。</string>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // AddEntryView.swift
 // 添加记录页面 - 活动和症状录入
 

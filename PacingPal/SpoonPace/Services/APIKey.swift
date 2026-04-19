@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // APIKey.swift
 // API Key 管理 - 从 UserDefaults 读取，用户可在 Settings 中设置
 // 支持多个云端 AI 提供者：Anthropic Claude, OpenAI, DeepSeek, Kimi, Qwen

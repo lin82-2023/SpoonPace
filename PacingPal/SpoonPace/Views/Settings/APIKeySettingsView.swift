@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // APIKeySettingsView.swift
 // AI API Key 设置页面
 // 支持多个云端 AI 提供者：Anthropic Claude, OpenAI

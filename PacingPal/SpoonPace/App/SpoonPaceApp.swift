@@ -1,5 +1,5 @@
-// PacingPal
-// PacingPalApp.swift
+// SpoonPace
+// SpoonPaceApp.swift
 // App 入口
 
 import SwiftUI
@@ -7,7 +7,7 @@ import SwiftData
 
 @MainActor
 @main
-struct PacingPalApp: App {
+struct SpoonPaceApp: App {
     var body: some Scene {
         WindowGroup {
             AppMainView()

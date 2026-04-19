@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // InsightsView.swift
 // AI 洞察页面 - 每周分析和建议
 
@@ -489,7 +489,7 @@ struct InsightsView: View {
                 if line.isEmpty {
                     Spacer().frame(height: 8)
                 } else if line.hasPrefix("# ") {
-                    // Main title (PacingPal Weekly Insight)
+                    // Main title (SpoonPace Weekly Insight)
                     Text(line.dropFirst(2))
                         .font(.title2.bold())
                         .foregroundColor(theme.primary)

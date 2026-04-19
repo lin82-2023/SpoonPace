@@ -1,4 +1,4 @@
-// PacingPal
+// SpoonPace
 // AIService.swift
 // AI 服务 - Natural Language Extraction + Weekly Insights
 // 架构：云端 API（增强质量，支持多个提供者） + 本地规则提取（always available fallback）
