@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D93A99692F948F2300171AA3 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93A99682F948F2300171AA3 /* HealthKitManager.swift */; };
+		D96B5E022F94E7C800221DF3 /* EnergyBuddy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D96B5E012F94E7C800221DF3 /* EnergyBuddy-Info.plist */; };
 		D9F8C4162F9397FD00336B84 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8C4022F9397FD00336B84 /* SubscriptionManager.swift */; };
 		D9F8C4172F9397FD00336B84 /* SymptomEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8C3FA2F9397FD00336B84 /* SymptomEntry.swift */; };
 		D9F8C4182F9397FD00336B84 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8C4042F9397FD00336B84 /* View+Extensions.swift */; };
@@ -45,9 +46,9 @@
 
 /* Begin PBXFileReference section */
 		D93A99682F948F2300171AA3 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
-		D93A996C2F949C5C00171AA3 /* PacingPal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PacingPal-Info.plist"; sourceTree = "<group>"; };
-		D93A996D2F949D6700171AA3 /* PacingPal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacingPal.entitlements; sourceTree = "<group>"; };
-		D9F8C3E72F9397A800336B84 /* PacingPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacingPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96B5E002F94E7C800221DF3 /* EnergyBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnergyBuddy.entitlements; sourceTree = "<group>"; };
+		D96B5E012F94E7C800221DF3 /* EnergyBuddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnergyBuddy-Info.plist"; sourceTree = "<group>"; };
+		D9F8C3E72F9397A800336B84 /* EnergyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F8C3F52F9397FD00336B84 /* PacingPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacingPalApp.swift; sourceTree = "<group>"; };
 		D9F8C3F72F9397FD00336B84 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		D9F8C3F82F9397FD00336B84 /* DailyEnergyBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyEnergyBudget.swift; sourceTree = "<group>"; };
@@ -97,8 +98,8 @@
 		D9F8C3DE2F9397A800336B84 = {
 			isa = PBXGroup;
 			children = (
-				D93A996D2F949D6700171AA3 /* PacingPal.entitlements */,
-				D93A996C2F949C5C00171AA3 /* PacingPal-Info.plist */,
+				D96B5E002F94E7C800221DF3 /* EnergyBuddy.entitlements */,
+				D96B5E012F94E7C800221DF3 /* EnergyBuddy-Info.plist */,
 				D9F8C44E2F93C85D00336B84 /* Assets.xcassets */,
 				D9F8C3F62F9397FD00336B84 /* App */,
 				D9F8C3FD2F9397FD00336B84 /* Models */,
@@ -115,7 +116,7 @@
 		D9F8C3E82F9397A800336B84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9F8C3E72F9397A800336B84 /* PacingPal.app */,
+				D9F8C3E72F9397A800336B84 /* EnergyBuddy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,9 +282,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9F8C3E62F9397A800336B84 /* PacingPal */ = {
+		D9F8C3E62F9397A800336B84 /* EnergyBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9F8C3F22F9397AD00336B84 /* Build configuration list for PBXNativeTarget "PacingPal" */;
+			buildConfigurationList = D9F8C3F22F9397AD00336B84 /* Build configuration list for PBXNativeTarget "EnergyBuddy" */;
 			buildPhases = (
 				D9F8C3E32F9397A800336B84 /* Sources */,
 				D9F8C3E42F9397A800336B84 /* Frameworks */,
@@ -293,14 +294,14 @@
 			);
 			dependencies = (
 			);
-			name = PacingPal;
+			name = EnergyBuddy;
 			packageProductDependencies = (
 				D9F8C42B2F93ADA900336B84 /* Hub */,
 				D9F8C42D2F93ADA900336B84 /* Tokenizers */,
 				D9F8C42F2F93ADA900336B84 /* Transformers */,
 			);
 			productName = PacingPal;
-			productReference = D9F8C3E72F9397A800336B84 /* PacingPal.app */;
+			productReference = D9F8C3E72F9397A800336B84 /* EnergyBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -321,7 +322,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9F8C3E22F9397A800336B84 /* Build configuration list for PBXProject "PacingPal" */;
+			buildConfigurationList = D9F8C3E22F9397A800336B84 /* Build configuration list for PBXProject "EnergyBuddy" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -338,7 +339,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9F8C3E62F9397A800336B84 /* PacingPal */,
+				D9F8C3E62F9397A800336B84 /* EnergyBuddy */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +354,7 @@
 				D9F8C44F2F93C85D00336B84 /* Assets.xcassets in Resources */,
 				D9F8C4562F93E1CB00336B84 /* APIKey.swift.example in Resources */,
 				D9F8C4402F93BD9700336B84 /* AppIcon.svg in Resources */,
+				D96B5E022F94E7C800221DF3 /* EnergyBuddy-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quan.nextech.PacingPal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quan.nextech.EnergyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -576,7 +578,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quan.nextech.PacingPal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quan.nextech.EnergyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -591,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9F8C3E22F9397A800336B84 /* Build configuration list for PBXProject "PacingPal" */ = {
+		D9F8C3E22F9397A800336B84 /* Build configuration list for PBXProject "EnergyBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9F8C3F02F9397AD00336B84 /* Debug */,
@@ -600,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9F8C3F22F9397AD00336B84 /* Build configuration list for PBXNativeTarget "PacingPal" */ = {
+		D9F8C3F22F9397AD00336B84 /* Build configuration list for PBXNativeTarget "EnergyBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9F8C3F32F9397AD00336B84 /* Debug */,

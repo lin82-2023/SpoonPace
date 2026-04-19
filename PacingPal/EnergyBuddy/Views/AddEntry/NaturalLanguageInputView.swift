@@ -1,4 +1,4 @@
-// PacingPal
+// EenergyBuddy
 // NaturalLanguageInputView.swift
 // AI 自然语言输入 - 用户用自然语言描述，AI 自动提取活动和症状
 

@@ -1,7 +1,7 @@
-# PacingPal / 缓行
+# EnergyBuddy / 量记
 
-> PacingPal - Energy management app for Long COVID and ME/CFS patients.
-> 缓行 - 为长新冠/慢性疲劳综合症患者设计的能量管理和症状追踪应用。
+> EnergyBuddy - Energy management app for Long COVID and ME/CFS patients.
+> 量记 - 为长新冠/慢性疲劳综合症患者设计的能量管理和症状追踪应用。
 
 ## 🎯 项目目标
 
@@ -39,14 +39,14 @@ App Store 上现有应用要么：
 
 ## 🎨 命名
 
-**English:** PacingPal
+**English:** EnergyBuddy
 - Easy to remember, clearly communicates what it does
-- "Pacing" is the key concept patients understand
-- "Pal" = friendly helper
+- "Energy" is the core concept we manage
+- "Buddy" = friendly helper that's always with you
 
-**中文：缓行**
-- 表达慢慢来，pace yourself 的概念
-- 简洁，优雅，符合产品调性
+**中文：量记**
+- 记录能量，简洁好记
+- 符合产品调性
 
 Alternative names: EnergyPulse, PaceGuard, SpoonPlan / 能量脉搏, 守步, 勺记
 

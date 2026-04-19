@@ -25,7 +25,7 @@ struct PaywallView: View {
                             .frame(width: 80, height: 80)
                             .foregroundColor(theme.primary)
 
-                        Text(String(localized: "Unlock PacingPal Pro"))
+                        Text(String(localized: "Unlock EnergyBuddy Pro"))
                             .font(.title)
                             .fontWeight(.bold)
 

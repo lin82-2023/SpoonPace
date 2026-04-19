@@ -268,7 +268,7 @@ final class LocalRuleBasedAIService: AIServiceProtocol {
         formatter.dateStyle = .medium
         let dateString = formatter.string(from: Date())
 
-        let title = String(localized: "PacingPal Weekly Insight")
+        let title = String(localized: "EnergyBuddy Weekly Insight")
         let generated = String(localized: "Generated %@")
 
         // Return full insight with generation date
@@ -792,7 +792,7 @@ final class CloudAIService: AIServiceProtocol {
         formatter.dateStyle = .medium
         let dateString = formatter.string(from: Date())
 
-        let title = String(localized: "PacingPal Weekly Insight")
+        let title = String(localized: "EnergyBuddy Weekly Insight")
         let generated = String(localized: "Generated %@")
 
         return """
